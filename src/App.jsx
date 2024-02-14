@@ -1,15 +1,23 @@
-import { useState } from "react";
+import MasterPage from "./Components/MasterPage";
+import Register from "./Components/Register/Register";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
 
-import "./App.css";
-import Header from "./Components/Header/Header";
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<MasterPage />}>
+      {/* <Route index element={<Home />} /> */}
+      <Route path="SignUp" element={<Register/>}  />
+    </Route>
+  )
+);
 
-function App() {
-  return (
-    <>
-      <Header />
-      <div>hellow</div>
-    </>
-  );
-}
+const App = () => {
+  return <RouterProvider router={router} />;
+};
 
 export default App;
