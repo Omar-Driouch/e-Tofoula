@@ -1,23 +1,25 @@
-import MasterPage from "./Components/MasterPage";
-import Register from "./Components/Register/Register";
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
+import "./App.css";
+import Header from "./components/Header/Header";
+import { Routes, Route } from "react-router-dom";
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<MasterPage />}>
-      {/* <Route index element={<Home />} /> */}
-      <Route path="SignUp" element={<Register/>}  />
-    </Route>
-  )
-);
+function App() {
 
-const App = () => {
-  return <RouterProvider router={router} />;
-};
+  return (
+    <>
+     
+        <>
+          <Header />
+          <Routes>
+            <Route path="/" element={<></>} />
+            <Route path="/home" element={<></>} />
+            <Route path="/services" element={<></>} />
+            <Route path="/contact" element={<></>} />
+            <Route path="/about/:id" element={<></>} />
+          </Routes>
+        </>
+    
+    </>
+  );
+}
 
 export default App;
