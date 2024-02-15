@@ -9,7 +9,7 @@ $dark: #252525;
 header {
   background: $white;
   position: fixed;
-
+  
   z-index: 6;
   width: 100%;
 
@@ -70,6 +70,7 @@ header {
               font-weight: 500;
               color: $dark;
               font-size: 30px;
+              font-family: "Londrina Solid";
               padding: 10px;
               position: relative;
 
