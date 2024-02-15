@@ -8,4 +8,5 @@ dependencies
 	npm i @reduxjs/toolkit react-redux redux axios
 	npm i react-paginate
 	npm i react-bootstrap
+	npm install country-flag-icons --save
 }

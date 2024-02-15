@@ -1,11 +1,11 @@
 import "./App.css";
 import Register from "./Components/Register/Register";
 import Footer from "./components/Footer/Footer";
-import Level1 from "./components/Game/Level1/Level1";
 import GameContainer from "./components/GameContainer/GameContainer";
-import Header from "./components/Header/Header";
+import Header from "./Components/Header/Header";
 import { Routes, Route } from "react-router-dom";
 import CustomizedSteppers from './Components/Stepper/Step';
+
 
 function App() {
   return (
@@ -19,9 +19,11 @@ function App() {
           <Route path="/contact" element={<></>} />
           <Route path="/about/:id" element={<></>} />
           <Route path="/Steper" element={<CustomizedSteppers/>} />
-
+          <Route path="/Activities" element={<></>} />
+          <Route path="/Rights" element={<></>} />
+          <Route path="/AboutUs" element={<></>} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </>
     </>
   );

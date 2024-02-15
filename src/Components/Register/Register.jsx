@@ -13,20 +13,32 @@ import { useState } from "react";
 const Register = () => {
   const [Sex, setSex] = useState("");
   return (
-    <Stack justifyContent={"center"} alignItems={"center"}>
-      <Stack width={"45%"}>
+    <Stack
+      justifyContent={"center"}
+      alignItems={"center"}
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        transform: "translateY(18%)",
+      }}
+    >
+      <Stack width={"35%"}>
         <img src="../../../public/fox png.png" className="fox" alt="" />
       </Stack>
       <Stack
         borderRadius={"25px"}
         component={"form"}
-        width={"45%"}
+        spacing={3}
+        width={"35%"}
         justifyContent={"center"}
         alignItems={"center"}
         sx={{
           boxShadow:
             "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;",
           p: 5,
+          py:9
         }}
         className="Parent"
       >
@@ -80,7 +92,7 @@ const Register = () => {
             <FormControlLabel
               value="moins_7"
               control={<Radio />}
-              label="moins de 6 ans" 
+              label="moins de 6 ans"
             />
             <FormControlLabel
               value="plus_7"
