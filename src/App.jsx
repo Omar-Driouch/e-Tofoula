@@ -3,6 +3,7 @@ import Register from "./Components/Register/Register";
 import Header from "./Components/Header/Header";
 import { Routes, Route } from "react-router-dom";
 import ShowAnimate from "./Components/Game/Animation/ShowAnimate";
+import Template from "./Components/Game/Template/Template";
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <>
         {/* <Header /> */}
         <Routes>
-          <Route path="/" element={<Register />} />
+          <Route path="/" element={<Template />} />
           <Route path="/Animation" element={<ShowAnimate />} />
           <Route path="/home" element={<></>} />
           <Route path="/services" element={<></>} />

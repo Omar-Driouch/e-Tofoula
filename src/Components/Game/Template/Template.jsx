@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-import { useState } from "react";
-=======
-<<<<<<< HEAD
 import React from 'react';
 
 const Template = () => {
@@ -85,9 +82,6 @@ const Template = () => {
     </div>
   );
 };
-<<<<<<< HEAD
-=======
 >>>>>>> 9fbe7617f6e66c2f66cf72b9c29722952e07c48e
->>>>>>> main
 
 export default Template;
