@@ -40,16 +40,36 @@ header {
       height: 80px;
 
       .menu {
+        width: 100%;
         .nav-menu {
           display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
           gap: 40px;
 
+          .inner-menu {
+
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+          }
+
+          .flags {
+
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap:1rem;
+
+             
+          }
           .menu-item {
             .language-selected img {
               object-fit: cover;
-              width: 60px;
-              height: 40px;
-              border-radius: 10px;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
               cursor: pointer;
             }
           }

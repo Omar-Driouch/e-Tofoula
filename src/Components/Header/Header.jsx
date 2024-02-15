@@ -10,6 +10,12 @@ const Header = () => {
 
   const [t,i18n] = useTranslation('global');
 
+  const handleLanguageChange = (lang) => {
+
+    i18n.changeLanguage(lang)
+
+  }
+
   return (
     <header className="header">
       <div className="container-header">
@@ -19,7 +25,8 @@ const Header = () => {
         <div className="header-top">
           <div className="menu">
             <ul className="nav-menu">
-              <li className="menu-item">
+              <div className="inner-menu">
+                <li className="menu-item">
                 <NavLink className="menu-link" to="/">
                 {t('header.Home')}
                 </NavLink>
@@ -39,30 +46,37 @@ const Header = () => {
                   About Us
                 </NavLink>
               </li>
-              <li className="menu-item">
-                <div className="language-selected">
-                  <img
-                    alt="United States"
-                    src="http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"
-                  />
+
                 </div>
-              </li>
+               <div className="flags">
               <li className="menu-item">
-                <div className="language-selected">
-                  <img
-                    alt="French"
-                    src="http://purecatamphetamine.github.io/country-flag-icons/3x2/FR.svg"
-                  />
-                </div>
-              </li>
-              <li className="menu-item">
-                <div className="language-selected">
-                  <img
-                    alt="Arabe"
-                    src="http://purecatamphetamine.github.io/country-flag-icons/3x2/MA.svg"
-                  />
-                </div>
-              </li>
+              <div className="language-selected">
+                <img
+                  alt="United States"
+                  src="http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"
+                  onClick={() => handleLanguageChange('en')}
+                />
+              </div>
+            </li>
+            <li className="menu-item">
+              <div className="language-selected">
+                <img
+                  alt="French"
+                  src="http://purecatamphetamine.github.io/country-flag-icons/3x2/FR.svg"
+                  onClick={() => handleLanguageChange('fr')}
+                />
+              </div>
+            </li>
+            <li className="menu-item">
+              <div className="language-selected">
+                <img
+                  alt="Arabe"
+                  src="http://purecatamphetamine.github.io/country-flag-icons/3x2/MA.svg"
+                  
+                />
+              </div>
+            </li>
+              </div> 
             </ul>
           </div>
         </div>

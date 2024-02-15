@@ -22,6 +22,7 @@ i18next.init({
     fr: {
       global: global_fr,
     },
+    
   },
 });
 
