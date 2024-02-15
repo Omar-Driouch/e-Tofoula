@@ -18,7 +18,6 @@ i18next.init({
     en: {
       global: global_en,
     },
-
     fr: {
       global: global_fr,
     },

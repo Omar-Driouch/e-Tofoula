@@ -1,19 +1,15 @@
-
-
-import React, { useState } from "react";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
+import { useState } from "react";
 import "./Template.scss";
 import PopUp from "./PopUp";
 import { images } from "../Template/Data/data.js";
+
 const Template = () => {
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
   const handleClose = () => {
     setShow(false);
   };
-
   const [currentImage, setCurrentImage] = useState(0);
-
   console.log(images[0]);
   return (
     <div className="container-template">
@@ -41,6 +37,5 @@ const Template = () => {
     </div>
   );
 };
-
 
 export default Template;

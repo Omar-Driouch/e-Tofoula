@@ -12,6 +12,7 @@ import "./Register.css";
 import { useState } from "react";
 const Register = () => {
   const [Sex, setSex] = useState("");
+  const [Age, setAge] = useState("");
   return (
     <Stack
       justifyContent={"center"}
@@ -22,10 +23,11 @@ const Register = () => {
         justifyContent: "center",
         alignItems: "center",
         transform: "translateY(18%)",
+        
       }}
     >
       <Stack width={"35%"}>
-        <img src="../../../public/fox png.png" className="fox" alt="" />
+        <img src="../../../public/fox png.png" style={{zIndex:3}} className="fox" alt="" />
       </Stack>
       <Stack
         borderRadius={"25px"}
@@ -39,6 +41,7 @@ const Register = () => {
             "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;",
           p: 5,
           py: 9,
+          backgroundColor:"white"
         }}
         className="Parent"
       >
