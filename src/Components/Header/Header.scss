@@ -14,10 +14,14 @@ header {
   .container-header {
     display: flex;
     align-items: center;
-    background-color: #c6d9a0;
+    background-color: #f6f6f6;
     justify-content: space-between;
+    border-radius: 50px;
+    margin: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     .header-top {
       max-width: 1200px;
+      padding-right: 50px;
 
       display: flex;
       align-items: center;
@@ -29,9 +33,10 @@ header {
           li {
             list-style: none;
             a.active {
-              color: $blue;
+              color: #c925f2;
               &::after {
                 width: 100%;
+                color: #c925f2;
               }
             }
             a {
@@ -39,23 +44,20 @@ header {
               text-decoration: none;
               font-weight: 500;
               color: $dark;
+
+              font-size: 30px;
               padding: 10px;
+              
               position: relative;
               &::after {
-                position: absolute;
-                content: "";
-                width: 0;
-                height: 5px;
-                background-color: #f25325;
-                border-radius: 2px;
-                bottom: 0;
-                left: 0;
+                color: #c925f2;
                 transition: 0.3s linear;
               }
               &:hover {
-                color: $blue;
+                color: #c925f2;
                 &::after {
                   width: 100%;
+                  color: #c925f2;
                 }
               }
             }

@@ -1,23 +1,24 @@
 import "./App.css";
+import Footer from "./components/Footer/Footer";
+import Level1 from "./components/Game/Level1/Level1";
+import GameContainer from "./components/GameContainer/GameContainer";
 import Header from "./components/Header/Header";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
-
   return (
     <>
-     
-        <>
-          <Header />
-          <Routes>
-            <Route path="/" element={<></>} />
-            <Route path="/home" element={<></>} />
-            <Route path="/services" element={<></>} />
-            <Route path="/contact" element={<></>} />
-            <Route path="/about/:id" element={<></>} />
-          </Routes>
-        </>
-    
+      <>
+        <Header />
+        <Routes>
+          <Route path="/" element={<GameContainer />} />
+          <Route path="/home" element={<></>} />
+          <Route path="/services" element={<></>} />
+          <Route path="/contact" element={<></>} />
+          <Route path="/about/:id" element={<></>} />
+        </Routes>
+        <Footer />
+      </>
     </>
   );
 }

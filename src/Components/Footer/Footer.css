@@ -1,0 +1,35 @@
+.footer-container {
+	background-color: #1d5169;
+	color: #fff;
+	padding: 50px 0;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer-section {
+	max-width: 300px;
+}
+
+.footer-section h2 {
+	font-size: 1.5rem;
+}
+
+.footer-section p {
+	font-size: 1rem;
+}
+
+.social-icons a {
+	color: #fff;
+	font-size: 1.5rem;
+	margin-right: 10px;
+}
+
+.footer-bottom {
+	text-align: center;
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #fff;
+}
