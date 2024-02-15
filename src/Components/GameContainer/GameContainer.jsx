@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./GameContainer.scss";
 import "../../assets/Certificate/Certificate.scss";
 import certificate from "../../assets/Certificate.svg";

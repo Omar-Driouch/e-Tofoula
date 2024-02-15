@@ -1,12 +1,20 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Header.scss";
-import English from "../../../node_modules/language-icons/icons/en.svg";
 import main_logo from "../../../public/main_logo.png";
 import { Link, NavLink } from "react-router-dom";
-import { US } from "country-flag-icons/react/3x2";
+
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
-  const headerTopRef = useRef(null);
+
+
+  const [t,i18n] = useTranslation('global');
+
+  const handleLanguageChange = (lang) => {
+
+    i18n.changeLanguage(lang)
+
+  }
 
   return (
     <header className="header">
@@ -17,9 +25,10 @@ const Header = () => {
         <div className="header-top">
           <div className="menu">
             <ul className="nav-menu">
-              <li className="menu-item">
+              <div className="inner-menu">
+                <li className="menu-item">
                 <NavLink className="menu-link" to="/">
-                  Home
+                {t('header.Home')}
                 </NavLink>
               </li>
               <li className="menu-item">
@@ -28,8 +37,14 @@ const Header = () => {
                 </NavLink>
               </li>
               <li className="menu-item">
+
+                <NavLink className="menu-link" to="/Register">
+                  
+                  About
+
+                  </NavLink>
+
                 <NavLink className="menu-link" to="/Rights">
-                  Rights
                 </NavLink>
               </li>
               <li className="menu-item">
@@ -37,30 +52,37 @@ const Header = () => {
                   About Us
                 </NavLink>
               </li>
-              <li className="menu-item">
-                <div className="language-selected">
-                  <img
-                    alt="United States"
-                    src="http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"
-                  />
+
                 </div>
-              </li>
+               <div className="flags">
               <li className="menu-item">
-                <div className="language-selected">
-                  <img
-                    alt="French"
-                    src="http://purecatamphetamine.github.io/country-flag-icons/3x2/FR.svg"
-                  />
-                </div>
-              </li>
-              <li className="menu-item">
-                <div className="language-selected">
-                  <img
-                    alt="Arabe"
-                    src="http://purecatamphetamine.github.io/country-flag-icons/3x2/MA.svg"
-                  />
-                </div>
-              </li>
+              <div className="language-selected">
+                <img
+                  alt="United States"
+                  src="http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"
+                  onClick={() => handleLanguageChange('en')}
+                />
+              </div>
+            </li>
+            <li className="menu-item">
+              <div className="language-selected">
+                <img
+                  alt="French"
+                  src="http://purecatamphetamine.github.io/country-flag-icons/3x2/FR.svg"
+                  onClick={() => handleLanguageChange('fr')}
+                />
+              </div>
+            </li>
+            <li className="menu-item">
+              <div className="language-selected">
+                <img
+                  alt="Arabe"
+                  src="http://purecatamphetamine.github.io/country-flag-icons/3x2/MA.svg"
+                  
+                />
+              </div>
+            </li>
+              </div> 
             </ul>
           </div>
         </div>
@@ -69,4 +91,5 @@ const Header = () => {
   );
 };
 
-export default Header;
+
+ export default Header;
