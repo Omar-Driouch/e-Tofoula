@@ -13,9 +13,9 @@ function App() {
         <Routes>
           <Route path="/" element={<GameContainer />} />
           <Route path="/home" element={<></>} />
-          <Route path="/services" element={<></>} />
-          <Route path="/contact" element={<></>} />
-          <Route path="/about/:id" element={<></>} />
+          <Route path="/Activities" element={<></>} />
+          <Route path="/Rights" element={<></>} />
+          <Route path="/AboutUs" element={<></>} />
         </Routes>
         <Footer />
       </>

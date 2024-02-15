@@ -1,5 +1,10 @@
 .game-container {
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+  justify-content: center;
+  text-align: center;
+
   img {
-    object-fit: fill;
+    padding-top: 100px;
+    object-fit: cover;
   }
 }
