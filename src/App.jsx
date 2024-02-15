@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <>
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route path="/" element={<Register />} />
           <Route path="/Animation" element={<ShowAnimate />} />
