@@ -1,3 +1,13 @@
-les resourse :
 
-npm i react-router-dom
+dependencies
+{
+	npm i react-router-dom
+	npm install @mui/icons-material
+	npm i swiper
+	npm i bootstrap
+	npm i @reduxjs/toolkit react-redux redux axios
+	npm i react-paginate
+	npm i react-bootstrap
+	npm install country-flag-icons --save
+	 npm i react-icons bootstrap react-bootstrap 
+}
