@@ -135,17 +135,16 @@ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   align-items: center; /* Horizontally center the images */
   margin-top: 300px;
   background-color: rgba(240, 248, 255, 0.671);
-  border-radius: 10px;
-  padding-bottom: 10px;
-  padding-right: -100px;
+  border-radius: 30px;
+  padding-bottom: 25px;
+  
   
   
 
 }
 
 .container2 img {
-   /* Add spacing between images */
-  width: 250px;
+  width: 340px;
   transition: transform 0.2s ease-in-out;
   border-radius: 10px;
 
@@ -163,7 +162,7 @@ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   background-color:#f2ff97;
   border-radius: 15px;
   margin: 20px;
-  margin-bottom: 17px;
+  margin-bottom: 30px;
   padding-left: 20px;
   padding-right: 20px;
   font-weight: 350;
