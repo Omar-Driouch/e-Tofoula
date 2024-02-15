@@ -9,4 +9,5 @@ dependencies
 	npm i react-paginate
 	npm i react-bootstrap
 	npm install country-flag-icons --save
+	 npm i react-icons bootstrap react-bootstrap 
 }

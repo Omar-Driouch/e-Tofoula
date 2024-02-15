@@ -2,10 +2,11 @@ import "./App.css";
 import Register from "./Components/Register/Register";
 import Footer from "./components/Footer/Footer";
 
-import GameContainer from "./components/GameContainer/GameContainer";
+
 import Header from "./Components/Header/Header";
 import { Routes, Route } from "react-router-dom";
 import CustomizedSteppers from "./Components/Stepper/Step";
+import Template from "./components/Game/Template/Template";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <>
         <Header />
         <Routes>
-          <Route path="/" element={<Register />} />
+          <Route path="/" element={<Template />} />
           <Route path="/home" element={<></>} />
           <Route path="/services" element={<></>} />
           <Route path="/contact" element={<></>} />
