@@ -1,14 +1,5 @@
-<<<<<<< HEAD
-import React from 'react';
 
-const Template = () => {
-  return (
-    <div>
-      
-    </div>
-  );
-}
-=======
+
 import React, { useState } from "react";
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 import "./Template.scss";
@@ -50,6 +41,6 @@ const Template = () => {
     </div>
   );
 };
->>>>>>> 51441946aa43941c35f98fcf3f4a324185e20745
+
 
 export default Template;
