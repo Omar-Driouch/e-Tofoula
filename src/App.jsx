@@ -17,7 +17,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Template />} />
-          <Route path="/services" element={<></>} />
+          <Route path="/Register" element={<Register />} />
           <Route path="/contact" element={<></>} />
           <Route path="/about/:id" element={<></>} />
           <Route path="/Steper" element={<CustomizedSteppers />} />
@@ -25,9 +25,8 @@ function App() {
           <Route path="/Activities" element={<></>} />
           <Route path="/Rights" element={<></>} />
           <Route path="/AboutUs" element={<></>} />
-         
         </Routes>
-         <Footer /> 
+        <Footer />
       </>
     </>
   );

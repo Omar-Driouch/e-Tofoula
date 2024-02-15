@@ -3,6 +3,9 @@ import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 import "./Template.scss";
 import PopUp from "./PopUp";
 import { images } from "../Template/Data/data.js";
+
+import "./PopUp.scss";
+
 const Template = () => {
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
@@ -21,7 +24,7 @@ const Template = () => {
         </div>
         <div className="content-template">
           <div className="false-icons" onClick={handleShow}>
-            <FaTimesCircle />
+            <img src="../../../public/badd.png" />
           </div>
           <div
             className="true-icons"
@@ -31,11 +34,22 @@ const Template = () => {
               );
             }}
           >
-            <FaCheckCircle />
+            <img src="../../../public/good.png" />
           </div>
         </div>
+        <div className="charachter-gender">
+          <img src="../../../public/avatarboy.png" />
+        </div>
       </div>
-      <PopUp show={show} handleClose={handleClose} />
+
+      <div>
+        <PopUp
+          data={"test"}
+          show={show}
+          handleClose={handleClose}
+          imageUrl={"../../../public/foxQuestion.png"}
+        />
+      </div>
     </div>
   );
 };
