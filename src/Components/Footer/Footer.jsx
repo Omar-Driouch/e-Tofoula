@@ -1,39 +1,47 @@
 import React from "react";
 import "./Footer.css"; // Import CSS file for styling
+import main_logo from "../../../public/main_logo.png";
+import email from "../../../public/mail.png";
+import facebook from "../../../public/facebook.png";
+import feedback from "../../../public/feedback.png";
+import instagram from "../../../public/instagram.png";
+import telephone from "../../../public/telephone.png";
 
 const Footer = () => {
   return (
-    <footer className="footer-container">
-      <div className="footer-content">
-        <div className="footer-section">
-          <h2>About Us</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            aliquam, lorem eget ullamcorper condimentum.
-          </p>
-        </div>
-        <div className="footer-section">
-          <h2>Contact Us</h2>
-          <p>Email: example@example.com</p>
-          <p>Phone: 123-456-7890</p>
-        </div>
-        <div className="footer-section">
-          <h2>Follow Us</h2>
-          <div className="social-icons">
-            <a href="#">
-              <i className="fab fa-facebook"></i>
-            </a>
-            <a href="#">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#">
-              <i className="fab fa-instagram"></i>
-            </a>
+    <footer>
+      <div className="footer-container">
+        <div className="footer-content">
+          <div className="footer-section">
+            <div className="logo">
+              <img src={main_logo} alt="" />
+            </div>
+            <div className="email">
+              <img src={email} alt="" /> hello@gomykid.ma
+            </div>
+          </div>
+          <div className="footer-section">
+            <div className="socialmedia">
+              <div className="email">
+                <img src={instagram} alt="" />
+              </div>
+              <div className="email">
+                <img src={facebook} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="footer-section">
+            <div className="email">
+              <img src={feedback} alt="" /> feedback
+            </div>
+            <div className="email">
+              <img src={telephone} alt="" /> +212 6 12 34 56 78
+            </div>
           </div>
         </div>
-      </div>
-      <div className="footer-bottom">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <div className="footer-bottom">
+          <p>&copy; Copyright 2024 GoMyKid</p>
+        </div>
       </div>
     </footer>
   );
