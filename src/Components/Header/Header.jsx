@@ -1,12 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Header.scss";
-import English from "../../../node_modules/language-icons/icons/en.svg";
 import main_logo from "../../../public/main_logo.png";
 import { Link, NavLink } from "react-router-dom";
-import { US } from "country-flag-icons/react/3x2";
+
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
-  const headerTopRef = useRef(null);
+
+
+  const [t,i18n] = useTranslation('global');
 
   return (
     <header className="header">
@@ -19,7 +21,7 @@ const Header = () => {
             <ul className="nav-menu">
               <li className="menu-item">
                 <NavLink className="menu-link" to="/">
-                  Home
+                {t('header.Home')}
                 </NavLink>
               </li>
               <li className="menu-item">
@@ -69,4 +71,5 @@ const Header = () => {
   );
 };
 
-export default Header;
+
+ export default Header;
