@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <>
-        <Header />
+        {/* <Header /> */}
         <Routes>
           <Route path="/" element={<Template />} />
           <Route path="/Register" element={<Register />} />
@@ -26,7 +26,7 @@ function App() {
           <Route path="/Rights" element={<></>} />
           <Route path="/AboutUs" element={<></>} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </>
     </>
   );
