@@ -10,6 +10,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 6;
 
   .container-header {
     display: flex;
@@ -47,7 +48,7 @@ header {
 
               font-size: 30px;
               padding: 10px;
-              
+
               position: relative;
               &::after {
                 color: #c925f2;
