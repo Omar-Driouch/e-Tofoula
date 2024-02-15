@@ -109,7 +109,7 @@ export const db_plus_7 = [
     Failed: "Pas de Chance",
   },
 ];
-export const db_moins_id = [
+export const db_moins_7 = [
   //Question 1
   {
     id: 1,
