@@ -15,7 +15,7 @@ function App() {
       <>
         <Header />
         <Routes>
-          <Route path="/animate" element={<Register />} />
+          <Route path="/animate" element={<IndexPart />} />
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<></>} />
           <Route path="/contact" element={<></>} />
