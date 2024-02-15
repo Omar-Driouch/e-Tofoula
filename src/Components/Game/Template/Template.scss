@@ -14,7 +14,7 @@
   padding-top: 100px;
   padding-bottom: 100px;
 
-  .container-template-ceontent {
+  .container-template-content {
     padding: 50px;
 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
@@ -28,23 +28,25 @@
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    gap: 150px;
+    gap: 100px;
 
     .content-template {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-evenly;
 
       .true-icons img {
         border-radius: 60%;
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
       }
 
       .false-icons img {
         border-radius: 60%;
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
+        cursor: pointer;
       }
 
       .images img {
@@ -58,8 +60,28 @@
 
     .charachter-gender {
       img {
-        transform: translateY(-150px);
-        width: 150px;
+        position: fixed;
+        transform: translate(-850px, -200px);
+      }
+    }
+
+    .qcm-container {
+      .qcm-container-content {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        justify-content: space-between;
+        .qcm-container-question {
+          list-style: none;
+
+          width: 350px;
+          button {
+            width: 100%;
+            border-radius: 20px;
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          }
+        }
       }
     }
   }
