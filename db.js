@@ -137,10 +137,10 @@ export const db_moins_7 = [
       "Papa et maman peuvent me faire des câlins et des bisous mais je ne dois pas laisser une autre personne me toucher.!",
     Avatar: "",
   },
-  //Question 4
+  //Question 4 
   {
     id: 4,
-    Question: "A quels endroits on ne doit pas te toucher",
+    Question: "A quels endroits on ne doit pas te toucher ?",
     Response: true,
     Option: ["Mon visage", "Mes fesses", "Mes parties intimes", "Ma poitrine"],
     Message:
@@ -150,7 +150,7 @@ export const db_moins_7 = [
   //Question 5
   {
     id: 5,
-    Question: "Un enfant dois être aimé par papa et maman",
+    Question: "Un enfant dois être aimé par papa et maman ?",
     Response: true,
     Message:
       "J’ai le droit d’être aimé par papa et maman sans être mis à l’écart, au petit coin ou encore négligé",

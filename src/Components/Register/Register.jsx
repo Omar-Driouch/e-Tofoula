@@ -13,6 +13,8 @@ import { useState } from "react";
 const Register = () => {
   const [Sex, setSex] = useState("");
   const [Age, setAge] = useState("");
+  const [Nickname, setNickname] = useState("");
+
   return (
     <Stack
       justifyContent={"center"}
@@ -58,7 +60,7 @@ const Register = () => {
             onClick={() => {
               setSex("Male");
             }}
-            src="../../../public/avatar boy.png"
+            src="../../../public/avatarboy.png"
             style={{
               width: "200px",
               height: "200px",
@@ -71,7 +73,7 @@ const Register = () => {
               setSex("Female");
             }}
             className="AvatarImg female"
-            src="../../../public/avatar girl.png"
+            src="../../../public/avatargirl.png"
             style={{
               width: "200px",
               height: "200px",
@@ -94,6 +96,7 @@ const Register = () => {
           >
             <FormControlLabel
               value="moins_7"
+              
               control={<Radio />}
               label="moins de 6 ans"
             />

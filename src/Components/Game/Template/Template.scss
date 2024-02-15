@@ -13,6 +13,7 @@
   padding-right: 200px;
   padding-top: 100px;
   padding-bottom: 100px;
+
   .container-template-ceontent {
     padding: 50px;
 
@@ -24,19 +25,41 @@
     border-radius: 20px;
     height: 100vh;
 
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 150px;
+
     .content-template {
-      background-color: aquamarine;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
 
-      padding: 50px;
+      .true-icons img {
+        border-radius: 60%;
+        width: 150px;
+        height: 150px;
+      }
+
+      .false-icons img {
+        border-radius: 60%;
+        width: 150px;
+        height: 150px;
+      }
+
       .images img {
         width: 10px;
         height: 10px;
         text-align: center;
         justify-content: center;
         align-items: center;
+      }
+    }
+
+    .charachter-gender {
+      img {
+        transform: translateY(-150px);
+        width: 150px;
       }
     }
   }
