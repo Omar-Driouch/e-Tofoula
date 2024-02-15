@@ -1,6 +1,6 @@
 import "./App.css";
 import Footer from "./components/Footer/Footer";
-import Level1 from "./components/Game/Level1/Level1";
+
 import GameContainer from "./components/GameContainer/GameContainer";
 import Header from "./components/Header/Header";
 import { Routes, Route } from "react-router-dom";
