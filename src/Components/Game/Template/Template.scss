@@ -9,16 +9,20 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 200px;
-
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   .container-template-ceontent {
     padding: 50px;
 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    background-image: url("../../../../public/test.jpg");
+    background-image: url("../../../../public/tdest.jpg");
+    background-color: #ffffffb0;
     border-radius: 20px;
+    height: 100vh;
 
     .content-template {
       background-color: aquamarine;

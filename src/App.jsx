@@ -21,14 +21,13 @@ function App() {
           <Route path="/contact" element={<></>} />
           <Route path="/about/:id" element={<></>} />
           <Route path="/Steper" element={<CustomizedSteppers />} />
-          <Route path="/" element={<GameContainer />} />
           <Route path="/home" element={<Home />} />
           <Route path="/Activities" element={<></>} />
           <Route path="/Rights" element={<></>} />
           <Route path="/AboutUs" element={<></>} />
          
         </Routes>
-        {/* <Footer /> */}
+         <Footer /> 
       </>
     </>
   );

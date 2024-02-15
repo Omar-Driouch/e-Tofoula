@@ -4,7 +4,7 @@ footer {
 	color: #fff;
 	border-radius: 50px;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-	transform: translateY(-280px);
+	/* transform: translateY(-280px); */
 	padding-left: 100px;
 	padding-right: 100px;
 	padding-top: 10px;
@@ -12,12 +12,7 @@ footer {
 }
 
 
-.footer-container {
-	
-
-
-
-}
+.footer-container {}
 
 .footer-content {
 	display: flex;
