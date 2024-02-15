@@ -123,18 +123,15 @@ export const db_moins_id = [
   //Question 2
   {
     id: 2,
-    Question:
-      "Personne ne peut m’insulter, et je ne dois insulter personne ?",
+    Question: "Personne ne peut m’insulter, et je ne dois insulter personne ?",
     Response: false,
-    Message:
-      "Personne ne peut m’insulter, et je ne dois insulter personne. !",
+    Message: "Personne ne peut m’insulter, et je ne dois insulter personne. !",
     Avatar: "",
   },
   //Question 3
   {
     id: 3,
-    Question:
-      "Un enfant peut-être câliné, embrassé par papa et maman ?",
+    Question: "Un enfant peut-être câliné, embrassé par papa et maman ?",
     Response: false,
     Message:
       "Papa et maman peuvent me faire des câlins et des bisous mais je ne dois pas laisser une autre personne me toucher.!",
@@ -143,9 +140,9 @@ export const db_moins_id = [
   //Question 4
   {
     id: 4,
-    Question:
-      "A quels endroits on ne doit pas te toucher",
+    Question: "A quels endroits on ne doit pas te toucher",
     Response: true,
+    Option: ["Mon visage", "Mes fesses", "Mes parties intimes", "Ma poitrine"],
     Message:
       "Personne n’a le droit de me frapper, et je n’ai pas le droit de frapper les autresLa violence n’est pas la solution !",
     Avatar: "",
@@ -153,23 +150,10 @@ export const db_moins_id = [
   //Question 5
   {
     id: 5,
-    Question:
-      "Un enfant peut-être frappé par un adulte ou une autre personne ?",
+    Question: "Un enfant dois être aimé par papa et maman",
     Response: true,
-
     Message:
-      "Personne n’a le droit de me frapper, et je n’ai pas le droit de frapper les autresLa violence n’est pas la solution !",
-    Avatar: "",
-  },
-  //Question 6
-  {
-    id: 6,
-    Question:
-      "Un enfant peut-être frappé par un adulte ou une autre personne ?",
-    Response: true,
-
-    Message:
-      "Personne n’a le droit de me frapper, et je n’ai pas le droit de frapper les autresLa violence n’est pas la solution !",
+      "J’ai le droit d’être aimé par papa et maman sans être mis à l’écart, au petit coin ou encore négligé",
     Avatar: "",
   },
 ];

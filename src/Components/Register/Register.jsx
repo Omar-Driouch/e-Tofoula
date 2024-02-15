@@ -38,7 +38,7 @@ const Register = () => {
           boxShadow:
             "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;",
           p: 5,
-          py:9
+          py: 9,
         }}
         className="Parent"
       >
