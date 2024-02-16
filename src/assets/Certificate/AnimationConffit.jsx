@@ -22,7 +22,7 @@ const AnimationConffit = ({ Show }) => {
           width={windowDimension.width}
           height={windowDimension.height}
           tweenDuration={1000}
-          style={{ zIndex: 9, background: "rgba(0, 0, 0, 0.553)" }}
+          style={{ zIndex: 9,  }}//background: "rgba(0, 0, 0, 0.553)"
         />
       )}
     </div>

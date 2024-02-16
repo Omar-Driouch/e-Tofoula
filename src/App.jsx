@@ -9,6 +9,7 @@ import Template from "./components/Game/Template/Template";
 import Home from "./Components/Home/Home";
 import About from "./components/About/About";
 import { useState } from "react";
+import Certificate from "./assets/Certificate/Certificate";
 
 function App() {
   const [isNotGaming, setIsNotGaming] = useState(true);
@@ -21,7 +22,7 @@ function App() {
         {isNotGaming && <Header />}
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Certificate />} />
           <Route path="/Register" element={<Register />} />
           <Route
             path="/Template"
