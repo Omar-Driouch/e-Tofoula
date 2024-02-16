@@ -3,6 +3,11 @@
     "header":{
 
         "Home":"Acceuil",
-        "Recent":"recent frensh"
+        "Recent":"recent frensh",
+        "Activities":"Activites",
+        "Rights":"Nos Droits",
+        "About": "A propos"
+        
+        
     }
 }

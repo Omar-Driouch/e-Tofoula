@@ -3,11 +3,24 @@ import Certiimage from "../../assets/Certificatesvg.svg";
 import AnimationConffit from "./AnimationConffit";
 import { useState } from "react";
 import { useEffect } from "react";
+import soundFile from "../../../public/LevelCompleteRi.mp3";
 
 const Certificate = ({ fullName }) => {
+
+
+
+
+
+    
+    
+     
+   
+  
   const [ShowAnimation, setShowAnimation] = useState(true);
   useEffect(() => {
     setTimeout(() => {
+      const audio = new Audio(soundFile);
+      audio.play();
       setShowAnimation(false);
     }, 5000);
   }, []);

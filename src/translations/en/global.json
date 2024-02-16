@@ -3,6 +3,10 @@
     "header":{
 
         "Home":"Home",
-        "Recent":"Recent"
+        "Recent":"Recent",
+        "Activities":"Activities",
+        "Rights":"Rights",
+        "About": "About"
+        
     }
 }

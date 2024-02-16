@@ -29,19 +29,19 @@ const Header = () => {
                 </li>
                 <li className="menu-item">
                   <NavLink className="menu-link" to="/Activities">
-                    Activities
+                    {t("header.Activities")}
                   </NavLink>
                 </li>
                 <li className="menu-item">
                   <NavLink className="menu-link" to="/Rights">
-                    Rights
+                    {t("header.Rights")}
                   </NavLink>
 
                   <NavLink className="menu-link" to="/Rights"></NavLink>
                 </li>
                 <li className="menu-item">
                   <NavLink className="menu-link" to="/About">
-                    About
+                    {t("header.About")}
                   </NavLink>
                 </li>
               </div>

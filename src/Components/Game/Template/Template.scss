@@ -28,8 +28,21 @@
     flex-direction: column;
     margin-top: 0px;
     gap: 5px;
-    .game-level{
-      
+    .game-level {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      h2 {
+        color: #f2ff97;
+        text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+          -1px 1px 0 #000;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+      }
     }
     .images img {
       width: 300px;
