@@ -1,7 +1,6 @@
 import "./App.css";
 import Register from "./Components/Register/Register";
 import Footer from "./components/Footer/Footer";
-
 import Header from "./Components/Header/Header";
 import { Routes, Route } from "react-router-dom";
 import CustomizedSteppers from "./Components/Stepper/Step";

@@ -49,6 +49,8 @@ const Home = () => {
             <img src={superKid} alt="Image 4" />
           </div>
         </div>
+        
+        {/*  */}
       </Fragment>
     );
   
