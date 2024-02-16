@@ -6,18 +6,23 @@ import "./Template.scss";
 import "./PopUp.scss";
 import Certificate from "../../../assets/Certificate/Certificate.jsx";
 import { DataContext } from "../../hooks/DataProvider.jsx";
+import { useNavigate } from "react-router-dom";
 
 const Template = ({ loadGaming }) => {
   const [show, setShow] = useState(false);
   const [isMinor, setIsMinor] = useState(true);
   const [currentImage, setCurrentImage] = useState(0);
   const [counter, setCounter] = useState(0);
-    const { data, updateData } = useContext(DataContext);
+  const { data, updateData } = useContext(DataContext);
   const [isRightAnswe, setIsRightAnswe] = useState(true);
   const [fullname, setFullname] = useState("");
 
   const handletheClickAnswwer = (stte) => {
     setIsRightAnswe(stte);
+  };
+  const navigateto = useNavigate();
+  const handleonclickeClose = () => {
+    navigateto("/");
   };
   useEffect(() => {
     setFullname(data);
@@ -105,6 +110,11 @@ const Template = ({ loadGaming }) => {
         <div className="container-template-content">
           <div className="game-level">
             <h2>level 1</h2>
+            <img
+              onClick={handleonclickeClose}
+              src="../../../public/close.png"
+              alt=""
+            />
           </div>
           <div className="images">
             <img src={QuestionsImages[currentImage]} alt="#" />
