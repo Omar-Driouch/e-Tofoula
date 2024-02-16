@@ -1,14 +1,14 @@
 import "./App.css";
 import Register from "./Components/Register/Register";
-import Footer from "./components/Footer/Footer";
+import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import { Routes, Route } from "react-router-dom";
 import CustomizedSteppers from "./Components/Stepper/Step";
-import Template from "./components/Game/Template/Template";
+import Template from "./Components/Game/Template/Template";
 import Home from "./Components/Home/Home";
-import About from "./components/About/About";
+import About from "./Components/About/About";
 import { useContext, useEffect, useState } from "react";
-import Rights from "./components/Rights/Rights";
+import Rights from "./Components/Rights/Rights";
 import { DataContext, DataProvider } from "./components/hooks/DataProvider";
 import Activities from "./components/Activities/Activities";
 
