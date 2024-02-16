@@ -1,23 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { QuestionsImages, FoxAnswres } from "../Template/Data/data.js";
 import PopUp from "./PopUp";
 import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
 import "./Template.scss";
 import "./PopUp.scss";
 import Certificate from "../../../assets/Certificate/Certificate.jsx";
+import { DataContext } from "../../hooks/DataProvider.jsx";
 
 const Template = ({ loadGaming }) => {
   const [show, setShow] = useState(false);
   const [isMinor, setIsMinor] = useState(true);
   const [currentImage, setCurrentImage] = useState(0);
   const [counter, setCounter] = useState(0);
-
+    const { data, updateData } = useContext(DataContext);
   const [isRightAnswe, setIsRightAnswe] = useState(true);
+  const [fullname, setFullname] = useState("");
 
   const handletheClickAnswwer = (stte) => {
     setIsRightAnswe(stte);
   };
   useEffect(() => {
+    setFullname(data);
     loadGaming();
   }, []);
   const handleShow = () => setShow(true);
@@ -100,6 +103,9 @@ const Template = ({ loadGaming }) => {
     <div className="container-template">
       {currentImage < 5 ? (
         <div className="container-template-content">
+          <div className="game-level">
+            <h2>level 1</h2>
+          </div>
           <div className="images">
             <img src={QuestionsImages[currentImage]} alt="#" />
           </div>
@@ -132,7 +138,7 @@ const Template = ({ loadGaming }) => {
         </div>
       ) : (
         <>
-          <Certificate fullName={"omar Driouch"} />
+          <Certificate fullName={fullname} />
         </>
       )}
       <div>
