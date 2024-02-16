@@ -1,7 +1,6 @@
 import Button from "@mui/material/Button";
 import { useState } from "react";
 import AnimationConffit from "./Animation/Animation-Conffit";
-
 const IndexPart = () => {
   const [Show, setShow] = useState(false);
   return (

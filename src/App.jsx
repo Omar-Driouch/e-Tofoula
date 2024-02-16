@@ -2,18 +2,19 @@ import "./App.css";
 import Register from "./Components/Register/Register";
 import Header from "./Components/Header/Header";
 import { Routes, Route } from "react-router-dom";
-import ShowAnimate from "./Components/Game/Animation/ShowAnimate";
+
 import Template from "./Components/Game/Template/Template";
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
   return (
     <>
       <>
-        {/* <Header /> */}
+        <Header />
         <Routes>
-          <Route path="/" element={<Template />} />
-          <Route path="/Animation" element={<ShowAnimate />} />
+          <Route path="/" element={<Register />} />
+          <Route path="/Game" element={<Template />} />
           <Route path="/home" element={<></>} />
           <Route path="/services" element={<></>} />
           <Route path="/contact" element={<></>} />
@@ -22,7 +23,7 @@ function App() {
           <Route path="/Rights" element={<></>} />
           <Route path="/AboutUs" element={<></>} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </>
     </>
   );

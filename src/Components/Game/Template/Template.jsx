@@ -1,17 +1,4 @@
-<<<<<<< HEAD
-import React from 'react';
-
-const Template = () => {
-  return (
-    <div>
-      
-    </div>
-  );
-}
-=======
-import React, { useState } from "react";
-import { FaCheckCircle, FaTimesCircle } from "react-icons/fa";
->>>>>>> main
+import { useEffect, useState } from "react";
 import "./Template.scss";
 import PopUp from "./PopUp";
 import { images } from "../Template/Data/data.js";
@@ -20,19 +7,27 @@ import "./PopUp.scss";
 const Template = () => {
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);
-  const [isMinor, setIsMinor] = useState(false);
+  const [isKids, setisKids] = useState("");
+  const [Sex, setSex] = useState("");
+  const [Age, setAge] = useState();
   const handleClose = () => {
     setShow(false);
   };
+  useEffect(() => {
+    const storedData = localStorage.getItem("myKid");
+    if (storedData) {
+      const parsedData = JSON.parse(storedData);
+      console.log(parsedData);
+    }
+  }, []);
   const [currentImage, setCurrentImage] = useState(0);
-  console.log(images[0]);
   return (
     <div className="container-template">
       <div className="container-template-content">
         <div className="images">
           <img src={images[currentImage]} alt="#" />
         </div>
-        {isMinor ? (
+        {isKids ? (
           <div className="content-template">
             <div className="false-icons" onClick={handleShow}>
               <img src="../../../public/badd.png" />
@@ -67,7 +62,15 @@ const Template = () => {
           </div>
         )}
         <div className="charachter-gender">
-          <img src="../../../public/avatarboy.png" />
+          <button>
+            fjfhj
+          </button>
+          {/* Sex */}
+          {Sex === "Male" ? (
+            <img src="../../../public/avatarboy.png" />
+          ) : (
+            <img src="../../../public/avatargirl.png" />
+          )}
         </div>
       </div>
 
@@ -82,6 +85,5 @@ const Template = () => {
     </div>
   );
 };
->>>>>>> 9fbe7617f6e66c2f66cf72b9c29722952e07c48e
 
 export default Template;

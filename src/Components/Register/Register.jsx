@@ -10,11 +10,18 @@ import {
 } from "@mui/material";
 import "./Register.css";
 import { useState } from "react";
+//
 const Register = () => {
   const [Sex, setSex] = useState("");
   const [Age, setAge] = useState("");
   const [Nickname, setNickname] = useState("");
 
+  //for Send data to the Game
+  const handlSubmit = () => {
+    const data = { Nickname: Nickname, Age: Age, Sex: Sex };
+    localStorage.setItem("myKid", JSON.stringify(data));
+    window.location.href="/Game"
+  };
   return (
     <Stack
       justifyContent={"center"}
@@ -25,16 +32,20 @@ const Register = () => {
         justifyContent: "center",
         alignItems: "center",
         transform: "translateY(18%)",
-        
       }}
     >
       <Stack width={"35%"}>
-        <img src="../../../public/fox png.png" style={{zIndex:3}} className="fox" alt="" />
+        <img
+          src="../../../public/fox png.png"
+          style={{ zIndex: 3 }}
+          className="fox"
+          alt=""
+        />
       </Stack>
       <Stack
         borderRadius={"25px"}
-        component={"form"}
         spacing={3}
+        component={"form"}
         width={"35%"}
         justifyContent={"center"}
         alignItems={"center"}
@@ -43,11 +54,11 @@ const Register = () => {
             "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;",
           p: 5,
           py: 9,
-          backgroundColor:"white"
+          backgroundColor: "white",
         }}
         className="Parent"
       >
-        {/* Avatar */}
+        {/* Sex Avatar */}
         <Stack
           direction={"row"}
           spacing={"47px"}
@@ -81,11 +92,12 @@ const Register = () => {
             }}
           />
         </Stack>
-        {/* Sex */}
+        {/* Age */}
         <FormControl>
           <FormLabel
             id="demo-row-radio-buttons-group-label"
             sx={{ textAlign: "center" }}
+            value="moins_7"
           >
             Select Age
           </FormLabel>
@@ -93,10 +105,14 @@ const Register = () => {
             row
             aria-labelledby="demo-row-radio-buttons-group-label"
             name="row-radio-buttons-group"
+            onChange={(eo) => {
+              setAge(eo.target.value);
+
+              
+            }}
           >
             <FormControlLabel
               value="moins_7"
-              
               control={<Radio />}
               label="moins de 6 ans"
             />
@@ -108,8 +124,24 @@ const Register = () => {
           </RadioGroup>
         </FormControl>
         {/* Nick Name */}
-        <TextField label="Nick Name" variant="standard" sx={{ width: "40%" }} />
-        <Button variant="contained" sx={{ mt: "30px" }} color="success">
+        <TextField
+          label="Nick Name"
+          required
+          onChange={(eo) => {
+            setNickname(eo.target.value);
+          }}
+          variant="standard"
+          sx={{ width: "40%" }}
+        />
+
+        <Button
+          variant="contained"
+          onClick={() => {
+            handlSubmit();
+          }}
+          sx={{ mt: "30px" }}
+          color="success"
+        >
           Start
         </Button>
       </Stack>
