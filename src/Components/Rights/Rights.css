@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
+
+body {
+	background-color: #7171d5;
+}
+
+.contain-me {
+	background-color: #7a75df;
+	border-radius: 15px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto;
+	padding-top: 100px;
+
+}
+
+.activities {
+	display: flex;
+	justify-content: center;
+
+
+
+}
+
+.activities button {
+
+
+	margin-top: 30px;
+	font-weight: 400 !important;
+	font-family: "Londrina Solid", sans-serif;
+	margin-bottom: 40px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	background-color: #f2ff97;
+
+	border: none;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	text-align: center;
+
+	font-size: 28px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	transition: all 0.5s;
+
+	font-weight: 300;
+	margin-right: 30px;
+
+
+}
+
+.img {
+	display: flex;
+	justify-content: center;
+}
+
+.img1 {
+
+	width: 50%;
+	height: 40%;
+
+}
+
+.pdfbtn button {
+	margin-top: 30px;
+
+	font-family: "Londrina Solid", sans-serif;
+	margin-bottom: 40px;
+	margin-top: 0px !important;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	background-color: #f2ff97;
+
+	border: none;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	text-align: center;
+
+	font-size: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	transition: all 0.5s;
+	cursor: pointer;
+	font-weight: 300;
+	margin-right: 65px !important;
+
+
+}
+
+.pdfbtn {
+	display: flex;
+	justify-content: center;
+
+}

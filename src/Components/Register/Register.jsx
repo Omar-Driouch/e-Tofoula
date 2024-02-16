@@ -9,11 +9,14 @@ import {
   Button,
 } from "@mui/material";
 import "./Register.css";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { DataContext } from "../hooks/DataProvider";
 const Register = () => {
   const navigate = useNavigate();
   const [Sex, setSex] = useState("");
+  const [kidNichName, setKidNichName] = useState("GoMyKid");
+  const { data, updateData } = useContext(DataContext);
   return (
     <Stack
       justifyContent={"center"}
@@ -26,7 +29,7 @@ const Register = () => {
         transform: "translateY(18%)",
       }}
     >
-      <Stack width={"35%"} >
+      <Stack width={"35%"}>
         <img src="../../../public/fox png.png" className="fox" alt="" />
       </Stack>
       <Stack
@@ -104,7 +107,12 @@ const Register = () => {
           </RadioGroup>
         </FormControl>
         {/* Nick Name */}
-        <TextField label="Nick Name" variant="standard" sx={{ width: "40%" }} />
+        <TextField
+          onChange={(e) => updateData(e.target.value)}
+          label="Nick Name"
+          variant="standard"
+          sx={{ width: "40%" }}
+        />
         <Button
           onClick={() => navigate("/Template")}
           variant="contained"
