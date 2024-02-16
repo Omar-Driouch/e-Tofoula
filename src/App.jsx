@@ -9,8 +9,8 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import { useContext, useEffect, useState } from "react";
 import Rights from "./Components/Rights/Rights";
-import { DataContext, DataProvider } from "./components/hooks/DataProvider";
-import Activities from "./components/Activities/Activities";
+import { DataContext, DataProvider } from "./Components/hooks/DataProvider";
+import Activities from "./Components/Activities/Activities";
 
 function App() {
   const [isNotGaming, setIsNotGaming] = useState(true);
