@@ -26,7 +26,6 @@ body {
   display: inline-block;
   border-radius: 15px;
   background-color: #f2ff97;
-
   border: none;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   text-align: center;
@@ -80,8 +79,6 @@ body {
   height: auto;
   display: block;
   border-radius: 10px;
-
-
 }
 
 .image:hover {}
@@ -140,19 +137,12 @@ body {
   border-radius: 30px;
   padding-bottom: 25px;
   width: 80%;
-
-
-
-
 }
 
 .container2 img {
   width: 300px;
   transition: transform 0.2s ease-in-out;
   border-radius: 10px;
-
-
-
 }
 
 .container2 img:hover {
@@ -183,4 +173,19 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   place-items: center;
   gap: 30px;
+}
+
+/* //dfjgmqi */
+.ParentFromDemande{
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   Horizontally center the images 
+  margin: 300px auto;*/
+  background-color: rgba(240, 248, 255, 0.671);
+  border-radius: 30px;
+  padding-bottom: 25px;
+  align-items: center;
+  justify-content: space-between;
 }
