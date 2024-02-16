@@ -26,7 +26,7 @@ const Register = () => {
         transform: "translateY(18%)",
       }}
     >
-      <Stack width={"35%"}>
+      <Stack width={"35%"} >
         <img src="../../../public/fox png.png" className="fox" alt="" />
       </Stack>
       <Stack
@@ -57,7 +57,7 @@ const Register = () => {
             onClick={() => {
               setSex("Male");
             }}
-            src="../../../public/avatar boy.png"
+            src="../../../public/avatarboy.png"
             style={{
               width: "200px",
               height: "200px",
@@ -70,7 +70,7 @@ const Register = () => {
               setSex("Female");
             }}
             className="AvatarImg female"
-            src="../../../public/avatar girl.png"
+            src="../../../public/avatargirl.png"
             style={{
               width: "200px",
               height: "200px",

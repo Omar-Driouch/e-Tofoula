@@ -16,7 +16,7 @@
   height: 150px;
   border-radius: 13px;
   transition: 4ms;
-
+  z-index: 6;
 }
 .AvatarImg.men:hover {
   background-color:#0E98BA; /*#00a1ff70;*/
@@ -26,7 +26,9 @@
   background-color: #FF69D4;
   scale: 1.05;
 }
-
+form{
+  background-color: white !important;
+}
 /*Radio */
 .wrapper {
   --font-color-dark: #fefefe;
