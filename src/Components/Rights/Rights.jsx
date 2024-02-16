@@ -12,7 +12,9 @@ const Rights = () => {
           <img className="img1" src="/KID'S RIGHTS schema.png" alt="Image" />
         </div>
         <div className="pdfbtn">
-          <button>Download PDF</button>
+        <a href="../../../public/convention-des-droits-de-lenfant.pdf">
+        <button>Download PDF</button>
+        </a>
         </div>
       </div>
     </>
