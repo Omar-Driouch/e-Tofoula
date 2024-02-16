@@ -10,7 +10,9 @@ import {
 } from "@mui/material";
 import "./Register.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const Register = () => {
+  const navigate = useNavigate();
   const [Sex, setSex] = useState("");
   return (
     <Stack
@@ -103,7 +105,12 @@ const Register = () => {
         </FormControl>
         {/* Nick Name */}
         <TextField label="Nick Name" variant="standard" sx={{ width: "40%" }} />
-        <Button variant="contained" sx={{ mt: "30px" }} color="success">
+        <Button
+          onClick={() => navigate("/Template")}
+          variant="contained"
+          sx={{ mt: "30px" }}
+          color="success"
+        >
           Start
         </Button>
       </Stack>
